@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joanne Trujillo - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <div class="logo">JT</div>
+            <button class="mobile-menu-btn" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul id="navMenu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#" class="download-btn" onclick="downloadResume()"><i class="fas fa-download"></i> Resume</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="profile-section">
+            <div class="profile-image">
+                <img src="headshot.jpg" alt="Joanne Trujillo">
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-user"></i>
+                    <span><strong>Joanne Trujillo</strong></span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>joannetrujillo8@gmail.com</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Denver, CO</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-linkedin"></i>
+                    <a href="http://linkedin.com/in/joanne-trujillo/" target="_blank">LinkedIn Profile</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="about-section">
+            <h1>Hi, I'm Joanne Trujillo</h1>
+            <p class="tagline">Quality Assurance Engineer | Playwright/Automation</p>
+            <p>I'm passionate about ensuring software quality through comprehensive testing and smart automation. With hands-on experience in Playwright-based automation, API testing, and manual exploratory testing, I help teams ship reliable products with confidence.</p>
+            <p>What drives me is building test coverage that actually matters—focusing on high-value user workflows, catching issues before they reach production, and creating automation that saves time without sacrificing thoroughness. I thrive in collaborative Agile environments where quality is a shared responsibility, working closely with developers and product teams to deliver exceptional user experiences.</p>
+            <p>My background in healthcare taught me the importance of attention to detail, clear communication, and making data-driven decisions—skills that translate perfectly into QA engineering. Whether I'm writing Playwright tests, validating APIs in Postman, or investigating bugs with DevTools, I'm always thinking about the end user and how we can make their experience better.</p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2 class="section-title">Technical Skills</h2>
+        
+        <div class="skill-category">
+            <h3 class="category-title">Test Automation & APIs</h3>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fas fa-robot"></i>
+                    <div class="skill-name">Playwright</div>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-js"></i>
+                    <div class="skill-name">JavaScript</div>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-paper-plane"></i>
+                    <div class="skill-name">Postman</div>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-file-code"></i>
+                    <div class="skill-name">Swagger</div>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-exchange-alt"></i>
+                    <div class="skill-name">REST APIs</div>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-code"></i>
+                    <div class="skill-name">JSON</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="skill-category">
+            <h3 class="category-title">CI/CD & Version Control</h3>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fab fa-git-alt"></i>
+                    <div class="skill-name">Git</div>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-github"></i>
+                    <div class="skill-name">GitHub Actions</div>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-infinity"></i>
+                    <div class="skill-name">CI/CD Pipelines</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="skill-category">
+            <h3 class="category-title">Test Management & Tracking</h3>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fab fa-jira"></i>
+                    <div class="skill-name">Jira</div>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-flask"></i>
+                    <div class="skill-name">Zephyr Scale</div>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-clipboard-check"></i>
+                    <div class="skill-name">Test Case Design</div>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-bug"></i>
+                    <div class="skill-name">Defect Tracking</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="skill-category">
+            <h3 class="category-title">Testing & Debugging</h3>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fab fa-chrome"></i>
+                    <div class="skill-name">Chrome DevTools</div>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-database"></i>
+                    <div class="skill-name">SQL</div>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-apple"></i>
+                    <div class="skill-name">iOS Testing</div>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-android"></i>
+                    <div class="skill-name">Android Testing</div>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-globe"></i>
+                    <div class="skill-name">Web Testing</div>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-plane"></i>
+                    <div class="skill-name">TestFlight</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="skill-category">
+            <h3 class="category-title">QA Practices & Methodologies</h3>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fas fa-search"></i>
+                    <div class="skill-name">Exploratory Testing</div>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-redo"></i>
+                    <div class="skill-name">Regression Testing</div>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-route"></i>
+                    <div class="skill-name">End-to-End Testing</div>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-fire"></i>
+                    <div class="skill-name">Smoke Testing</div>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-users"></i>
+                    <div class="skill-name">UAT</div>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-sync"></i>
+                    <div class="skill-name">Agile/Scrum</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2 class="section-title">Projects</h2>
+        <div class="project-list">
+            <div class="project-item">
+                <h3>Automated Test Framework - E-Commerce Platform</h3>
+                <p>Developed comprehensive Playwright-based automation suite covering critical user journeys including authentication, product search, cart functionality, and checkout flows. Integrated with GitHub Actions for continuous testing on every pull request.</p>
+                <div class="tech-stack">
+                    <span class="tech-tag">Playwright</span>
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">GitHub Actions</span>
+                    <span class="tech-tag">CI/CD</span>
+                </div>
+                <div class="project-links">
+                    <a href="#" class="project-link">View Project →</a>
+                </div>
+            </div>
+
+            <div class="project-item">
+                <h3>API Test Suite - Real Estate Platform</h3>
+                <p>Created and maintained comprehensive API test collection in Postman for validating property search, listing management, and user authentication endpoints. Established data validation patterns and error handling tests to ensure backend reliability.</p>
+                <div class="tech-stack">
+                    <span class="tech-tag">Postman</span>
+                    <span class="tech-tag">REST APIs</span>
+                    <span class="tech-tag">Swagger</span>
+                    <span class="tech-tag">JSON</span>
+                </div>
+                <div class="project-links">
+                    <a href="#" class="project-link">View Project →</a>
+                </div>
+            </div>
+
+            <div class="project-item">
+                <h3>Mobile Testing Strategy - iOS & Android Apps</h3>
+                <p>Established testing approach for sports technology mobile applications across iOS and Android platforms. Developed test cases for cross-platform consistency, integrated TestFlight for beta testing coordination, and validated native mobile features.</p>
+                <div class="tech-stack">
+                    <span class="tech-tag">iOS</span>
+                    <span class="tech-tag">Android</span>
+                    <span class="tech-tag">TestFlight</span>
+                    <span class="tech-tag">Jira</span>
+                </div>
+                <div class="project-links">
+                    <a href="#" class="project-link">View Project →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <h2 class="section-title">Work Experience</h2>
+        <div class="experience-grid">
+            <div class="experience-card">
+                <h3>Sportendo</h3>
+                <div class="role">Quality Assurance Engineer</div>
+                <div class="date">Jul 2023 – Present | Remote</div>
+                <ul>
+                    <li>Develop and maintain Playwright-based UI and API automation (JavaScript) for high-value workflows, expanding coverage and reducing regression effort by ~30%</li>
+                    <li>Execute exploratory, functional, and regression testing across iOS, Android, and web admin applications</li>
+                    <li>Conduct API testing using Postman, Swagger, and Playwright to validate integrations and backend behavior</li>
+                    <li>Implement Git and GitHub Actions for efficient repository management and automated CI/CD pipelines</li>
+                    <li>Document and track defects to closure with 95% accuracy using Jira and Zephyr Scale, authoring clear bug reports that accelerate developer resolution</li>
+                    <li>Collaborate cross-functionally to assess risk, prioritize issues, and support release readiness</li>
+                </ul>
+            </div>
+
+            <div class="experience-card">
+                <h3>Reali</h3>
+                <div class="role">Quality Assurance Engineer (Contract)</div>
+                <div class="date">Feb 2022 – Nov 2022 | Remote</div>
+                <ul>
+                    <li>Supported QA for real estate technology platform focused on home search, listing discovery, and admin workflows</li>
+                    <li>Performed manual feature, exploratory, and regression testing across frequent releases, validating search, filtering, authentication, and internal tools</li>
+                    <li>Authored and maintained 150+ manual test cases covering core user journeys, edge cases, and dependencies</li>
+                    <li>Executed API testing using Postman and Swagger to validate backend responses, data integrity, and error handling</li>
+                    <li>Contributed Playwright-based smoke and regression automation (~15–20 tests), reducing regression execution time by ~20–25%</li>
+                    <li>Logged and triaged defects in Jira, improving resolution time through clear documentation</li>
+                    <li>Used DevTools and SQL to investigate data inconsistencies and support root-cause analysis</li>
+                </ul>
+            </div>
+
+            <div class="experience-card">
+                <h3>Traditional Chinese Medicine & Acupuncture Practice</h3>
+                <div class="role">Founder/Clinical Strategist</div>
+                <div class="date">2007 – 2021 | Denver, CO</div>
+                <p>Built and ran a multi-disciplinary healthcare clinic and private practice, working directly with patients to assess complex patterns, make results-driven treatment decisions, and clearly communicate progress while managing all aspects of the business day to day.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+        <h2 class="section-title">Education</h2>
+        <div class="education-grid">
+            <div class="education-card">
+                <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+                <div class="edu-content">
+                    <h3>Advanced Mentorship Program</h3>
+                    <p class="edu-field">Quality Assurance Engineering | Automation/Manual</p>
+                </div>
+            </div>
+            <div class="education-card">
+                <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+                <div class="edu-content">
+                    <h3>Master's Degree</h3>
+                    <p class="edu-field">Southwest Acupuncture College</p>
+                </div>
+            </div>
+            <div class="education-card">
+                <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+                <div class="edu-content">
+                    <h3>Bachelor of Science</h3>
+                    <p class="edu-field">Colorado State University</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-grid">
+            <div class="contact-details">
+                <h3>Contact Information</h3>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span><a href="mailto:joannetrujillo8@gmail.com">joannetrujillo8@gmail.com</a></span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Denver, CO</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-linkedin"></i>
+                    <span><a href="http://linkedin.com/in/joanne-trujillo/" target="_blank">linkedin.com/in/joanne-trujillo</a></span>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <h3>Let's Work Together</h3>
+                <p>I'm always interested in hearing about new opportunities, collaborating on QA initiatives, or discussing testing strategies. Whether you're looking for someone to strengthen your test automation, improve your QA processes, or contribute to your team's quality culture, I'd love to connect.</p>
+                <p style="margin-top: 20px;">Feel free to reach out via email or connect with me on LinkedIn. I typically respond within 24 hours and am happy to schedule a call to discuss how I can help your team deliver better software.</p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('navMenu');
+            menu.classList.toggle('active');
+        }
+
+        function downloadResume() {
+            // Replace 'Joanne-Trujillo-Resume.pdf' with your actual resume file name
+            window.location.href = 'Joanne-Trujillo-Resume.pdf';
+            
+            // Alternative: Open print dialog
+            // window.print();
+        }
+
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('nav a:not(.download-btn)').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('navMenu').classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>
