@@ -256,6 +256,21 @@ section {
     line-height: 1.7;
 }
 
+.ai-note {
+    background: #fff8f4;
+    border: 1px solid #f0d5c0;
+    border-radius: 8px;
+    padding: 12px 16px;
+    font-size: 0.95rem;
+    color: #7a4a2a !important;
+    margin-bottom: 15px !important;
+}
+
+.ai-note i {
+    color: #D2691E;
+    margin-right: 6px;
+}
+
 .tech-stack {
     display: flex;
     flex-wrap: wrap;
